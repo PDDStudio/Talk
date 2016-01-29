@@ -2,7 +2,8 @@
 An easy to use Android library with a fluent interface to integrate voice interaction into your Application.
 
 ##Demo Application
-todo
+###Screenshot
+###Download
 
 ##Getting Started
 ###Add the library as dependency
@@ -72,3 +73,26 @@ listenBtn = (Button) findViewById(R.id.listenBtn);
             }
         });
 ```
+
+###Notes
+- Make sure that permission `RECORD_AUDIO` is added & granted:  `<uses-permission android:name="android.permission.RECORD_AUDIO" />` 
+- You can find some more details in the demo application on how to add voice integration into your layout
+
+##About & Contact
+- In case you've a question feel free to hit me up via E-Mail (patrick.pddstudio@googlemail.com) 
+- or [Google+](http://plus.google.com/+PatrickJung42)
+
+##License
+    Copyright 2015 Patrick J
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
