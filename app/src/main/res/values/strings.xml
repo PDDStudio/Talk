@@ -17,4 +17,5 @@
 <resources>
     <string name="app_name">TalkDemo</string>
     <string name="btn_listening">Voice Action</string>
+    <string name="btn_add">Add Command</string>
 </resources>

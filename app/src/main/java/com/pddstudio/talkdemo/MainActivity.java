@@ -25,6 +25,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.pddstudio.talking.Talk;
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements Talk.Callback {
     TextView statusText;
     TextView wordText;
     Button listenBtn;
+    EditText commandText;
+    Button addCmdBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +64,11 @@ public class MainActivity extends AppCompatActivity implements Talk.Callback {
                 }
             }
         });
+
+        commandText = (EditText) findViewById(R.id.cmdText);
+        addCmdBtn = (Button) findViewById(R.id.addBtn);
+        addCmdBtn.setOnClickListener(addCommandListener);
+
     }
 
     private boolean hasPermission() {
@@ -80,6 +88,11 @@ public class MainActivity extends AppCompatActivity implements Talk.Callback {
         }
     }
 
+    @Override
+    public void onDestroy() {
+        Talk.getInstance().stopListening();
+        super.onDestroy();
+    }
 
 
     /*
@@ -162,6 +175,18 @@ public class MainActivity extends AppCompatActivity implements Talk.Callback {
         @Override
         public String getVoiceString() {
             return "This library is cool";
+        }
+    };
+
+    private View.OnClickListener addCommandListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            if(commandText.getText() != null && !commandText.getText().toString().isEmpty()) {
+                CustomObject customObject = new CustomObject(MainActivity.this, commandText.getText().toString());
+                Talk.getInstance().addSpeechObjects(customObject);
+                statusText.setText("Added: " + commandText.getText().toString());
+                commandText.setText("");
+            }
         }
     };
 
