@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TalkDemo</string>
+    <string name="btn_listening">Voice Action</string>
+</resources>
