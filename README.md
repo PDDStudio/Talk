@@ -86,7 +86,7 @@ listenBtn = (Button) findViewById(R.id.listenBtn);
 - or [Google+](http://plus.google.com/+PatrickJung42)
 
 ##License
-    Copyright 2015 Patrick J
+    Copyright 2016 Patrick J
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
