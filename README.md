@@ -80,6 +80,7 @@ listenBtn = (Button) findViewById(R.id.listenBtn);
 - You can find some more details in the demo application on how to add voice integration into your layout
 - Offline Mode is automatically available on SDK > 23
 - Default language is English, you can change this by yourself in case you want to
+
 ##About & Contact
 - In case you've a question feel free to hit me up via E-Mail (patrick.pddstudio@googlemail.com) 
 - or [Google+](http://plus.google.com/+PatrickJung42)
