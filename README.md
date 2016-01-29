@@ -3,6 +3,7 @@ An easy to use Android library with a fluent interface to integrate voice intera
 
 ##Demo Application
 ###Screenshot
+![](https://raw.githubusercontent.com/PDDStudio/Talk/master/gfx/preview.png) 
 ###Download
 
 ##Getting Started
@@ -77,7 +78,8 @@ listenBtn = (Button) findViewById(R.id.listenBtn);
 ###Notes
 - Make sure that permission `RECORD_AUDIO` is added & granted:  `<uses-permission android:name="android.permission.RECORD_AUDIO" />` 
 - You can find some more details in the demo application on how to add voice integration into your layout
-
+- Offline Mode is automatically available on SDK > 23
+- Default language is English, you can change this by yourself in case you want to
 ##About & Contact
 - In case you've a question feel free to hit me up via E-Mail (patrick.pddstudio@googlemail.com) 
 - or [Google+](http://plus.google.com/+PatrickJung42)
