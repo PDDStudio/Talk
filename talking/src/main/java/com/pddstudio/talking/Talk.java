@@ -75,4 +75,11 @@ public final class Talk {
         recognitionModel.startListening();
     }
 
+    public void stopListening() {
+        if(recognitionModel != null) {
+            recognitionModel.stopListening();
+            recognitionModel = null;
+        }
+    }
+
 }
