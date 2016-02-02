@@ -1,6 +1,8 @@
 #Talk
 An easy to use Android library with a fluent interface to integrate voice interaction into your Application.
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Talk-green.svg?style=true)](https://android-arsenal.com/details/1/3093)
+
 ##Demo Application
 ###Screenshot
 ![](https://raw.githubusercontent.com/PDDStudio/Talk/master/gfx/preview.png) 
